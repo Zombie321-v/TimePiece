@@ -56,7 +56,7 @@ function preloadImages(onProgress, onComplete) {
     const img = new Image();
     const frameNum = String(i).padStart(4, '0');
     // Reference the exact folder structure: /watch _site/frame_####.jpg
-    img.src = `/watch _site/frame_${frameNum}.jpg`;
+    img.src = `/watch_site/frame_${frameNum}.jpg`;
     img.onload = () => handleFrameLoaded(onProgress, onComplete);
     img.onerror = () => handleFrameLoaded(onProgress, onComplete);
     images.push(img);
